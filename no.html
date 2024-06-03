@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRINGEEEE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>pls reconsider</h1>
+        <img id="randomImage" src="images/happyCat.gif" alt="oops, something went wrong">
+        <h1>do you love me?</h1>
+        <div class="buttons">
+            <a href="yes.html"><button>YES OFC!!!</button></a>
+            <a href="no.html"><button>no</button></a>
+        </div>
+    </div>
+    <script>
+        function getRandomImage() {
+            const images = [
+                'images/sadCat.jpg',
+                'images/sadCat1.jpg',
+                'images/sadDog.jpg',
+                'images/sadHamster.jpg'
+            ];
+            const randomIndex = Math.floor(Math.random() * images.length);
+            return images[randomIndex];
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const imgElement = document.getElementById('randomImage');
+            imgElement.src = getRandomImage();
+        });
+    </script>
+</body>
+</html>

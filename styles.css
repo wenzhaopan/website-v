@@ -1,0 +1,61 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('images/Heart.webp') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds a semi-transparent background to improve readability */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #ff0066; /* Love themed color */
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #ff6699; /* Pink color */
+    color: white;
+    transition: background-color 0.3s, transform 0.3s;
+    position: relative;
+}
+
+.buttons button:before {
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+.buttons button:after {
+    left: -50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+}
+
+
+.buttons button:hover:before, .buttons button:hover:after {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.buttons button:active {
+    background-color: #cc0052;
+}
